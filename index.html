@@ -56,13 +56,20 @@
         }
         
         .stats-counter {
-            font-size: 3.5rem;
+            font-size: 2.2rem;  
             font-weight: 800;
             background: linear-gradient(135deg, #0f4c75, #3282b8);
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
-        
+
+        @media (min-width: 768px) {
+            .stats-counter {
+                font-size: 3.5rem;
+            }
+        }
+
         .section-divider {
             height: 4px;
             background: linear-gradient(90deg, transparent, #0f4c75, #3282b8, transparent);
